@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="MenschAErgereDichNicht">
+  <ClassDiagramComponents>
+    <Class name="Player" package="" visibility="public" xPosition="24.0" yPosition="114.0">
+      <Fields>
+        <Field name="color" type="char" visibility="private"/>
+        <Field name="name" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="startTurn" returnType="void" visibility="public"/>
+        <Method name="chooseField" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="GameState" package="" visibility="public" xPosition="483.0" yPosition="186.0">
+      <Fields>
+        <Field name="Fields" type="charArray" visibility="private"/>
+        <Field name="nextPlayer" type="string" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="setFigure" returnType="void" visibility="public"/>
+        <Method name="setNextPlayer" returnType="void" visibility="public"/>
+        <Method name="getNextPlayer" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Rules" package="" visibility="public" xPosition="203.0" yPosition="114.0">
+      <Fields>
+        <Field name="diceResult" type="int" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="checkFieldStart" returnType="bool" visibility="private"/>
+        <Method name="checkFieldEnd" returnType="bool" visibility="private"/>
+        <Method name="checkBase" returnType="bool" visibility="private">
+          <Argument type="char" name="color"/>
+        </Method>
+        <Method name="checkForcedAction" returnType="int[]" visibility="private">
+          <Argument type="char" name="color"/>
+        </Method>
+        <Method name="rollDice" returnType="int[]" visibility="public">
+          <Argument type="char" name="color"/>
+        </Method>
+        <Method name="checkForcedActionSix" returnType="int[]" visibility="private">
+          <Argument type="char" name="color"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="main" package="" visibility="public" xPosition="483.0" yPosition="66.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>
